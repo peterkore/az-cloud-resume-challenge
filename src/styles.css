@@ -1,21 +1,277 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2020.07.25., 8:23:30
+    Author     : kepe
+*/
 * {
+  box-sizing: border-box;
+}
+body {
+  background-color: none;
+  color: black;
+  font-size: calc(15px + 0.390625vw);
+}
+p {
+  font-size: calc(15px + 0.390625vw);
+
+  font-family: Arial, sans-serif;
+}
+
+/*nav menu*/
+.topnav {
+  overflow: hidden;
+  background-color: antiquewhite;
+  width: 100%;
+  position: relative;
+}
+/*linkek eltakarása, kivéve a logo/home rész*/
+.topnav #myLinks {
+  display: none;
+  font-size: 1.6rem;
+}
+
+/*navigációs menu stílusának beállítása*/
+.topnav a {
+  color: #343a40;
+  padding: 4% 6%;
+  text-decoration: none;
+
+  display: block;
+}
+
+/*nav menu vege*/
+#befoglalo {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding-top: 1em;
+  margin-top: 0 !important;
+  margin: 1em;
+}
+.header {
+  flex: 100%;
+  padding: 1em;
+  padding-top: 0;
+}
+
+.bemutatkozas-3 {
+  font-size: 1.25em;
+  line-height: 1;
+  font-weight: 400;
+}
+#kep {
+  flex: 100%;
+  padding: 1em;
+}
+#arckep {
+  border-radius: 30%;
+
+  /*a kép középre igazítása*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*a kép középre igazításának vége*/
+}
+#arckep:hover {
+  border: white 5px solid;
+}
+#fo-szoveg {
+  flex: 100%;
+  padding: 1em;
+}
+.nagybetu {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+}
+.kicsi-betu {
+  font-size: smaller !important;
+}
+.szin {
+  color: #b1580c;
+}
+.alahuzas {
+  border-bottom: green 5px solid;
+  padding-bottom: 2px;
+  max-width: fit-content;
+}
+/*bio ikon szöveg border beállítása*/
+.bio-container {
+  display: flex;
+}
+.bio-container > div {
+  margin: 10px;
+}
+
+.bio-hatar {
+  border-left: green 5px solid;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 50%; /*függőleges vonal beállítása az ikon alá*/
+}
+.pipa-ikon {
+  color: green;
+  position: relative;
+  font-size: 36px;
+  padding-top: 1vh;
+}
+.pipa-tartalom {
+  position: relative;
+  padding-top: 1vh;
+  background-color: whitesmoke;
+}
+
+.bemutatkozas-fo {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: calc(18px + 0.390625vw);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+.bemutatkozas-2 {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: calc(17px + 0.390625vw);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.bemutatkozas-2 p {
+  font-weight: normal;
+  font-size: calc(15px + 0.390625vw);
+  text-transform: none;
+  letter-spacing: normal;
+}
+.szoveg-border {
+  border-left: 5px;
+  border-left-color: green;
+  border-left-style: solid;
+  padding-left: 1em;
 }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+/*a táblázat stílusának beállítása*/
+table {
+  border-left: 1px dotted grey;
+  margin-left: 2px;
+}
+td {
+  padding-top: 1em;
+  word-break: break-all;
+  min-width: 100px;
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+tr:hover td {
+  background-color: green;
+}
+
+tr:nth-child(even) {
+  background-color: antiquewhite;
+}
+
+/*a táblázat stílusának beállítása vége*/
+.alairas {
+  font-size: calc(17px + 0.390625vw);
+  margin-top: 1em;
+  color: #4c5357;
+}
+#elerhetoseg {
+  flex: 100%;
+  padding: 1em 1em 1em 0em;
+}
+
+p {
+  line-height: calc(1ex / 0.32);
+  /* optimális sormagasság beállítása tipográfiai szempontból*/
+}
+a {
+  font-style: italic;
+
+  text-decoration: underline;
+}
+a:hover {
+  background-color: #757575;
+  color: whitesmoke;
+}
+#lablec {
+  font-size: calc(12px + 0.390625vw);
+
+  /*a kép középre igazítása*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*a kép középre igazításának vége*/
+  color: #4c5357;
+}
+
+/*adatkezeles pop up css vége*/
+@media only screen and (min-width: 1024px) {
+  /*for desktop*/
+  body {
+    background-color: none;
+    color: black;
+    font-size: calc(15px + 0.390625vw);
+  }
+  p {
+    font-size: calc(15px + 0.390625vw);
+    text-transform: none;
+  }
+
+  #befoglalo {
+    flex-wrap: wrap;
+    padding: 0 1em 1em 1em;
+  }
+  #header {
+    flex: 33%;
+    order: 1;
+    padding: 1em;
+    font-size: 20px;
+  }
+  #fo-szoveg {
+    flex: 33%;
+    order: 2;
+    padding: 1em;
+  }
+
+  #kep {
+    padding-top: 10%;
+    flex: 33%;
+    max-height: 400px;
+    order: 3;
+  }
+  #fo-szoveg-kontener {
+    order: 4;
+    flex: 65%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #bio {
+    flex: 50%;
+  }
+  #kepzettseg {
+    flex: 50%;
+  }
+
+  #naplo {
+    flex: 65%;
+    order: 5;
+    padding: 1em;
+  }
+
+  #elerhetoseg {
+    max-width: 65%;
+    order: 6;
+    padding: 1em 1em 1em 0em;
+  }
+
+  #lablec {
+    flex: 100%;
+    flex-wrap: no-wrap;
+    order: 7;
+    padding: 1em;
+  }
 }

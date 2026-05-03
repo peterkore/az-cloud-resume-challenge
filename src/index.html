@@ -1,26 +1,256 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Peter Kore Introduction</title>
+    <meta
+      name="description"
+      content="My name is Peter Kore, I am an IT professional. 
+        This is my personal website where I introduce myself and share my work experience and skills."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
-</head>
+    <meta
+      property="og:title"
+      content="Peter Kore cloud engineer introducing website"
+    />
 
-<body>
-  <main>
-    <h1>Vanilla JavaScript App</h1>
-      <p>Loading content from the API: <b id="name">...</b></p>
-    </main>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-stretch: expanded;
+      }
+      h1,
+      button {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        font-size: calc(19px + 0.390625vw);
+      }
+      h2 {
+        font-size: calc(17px + 0.390625vw);
+      }
+
+      @font-face {
+        font-family: "Style Script";
+        font-style: normal;
+
+        font-display: swap;
+      }
+    </style>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <div id="befoglalo">
+      <div class="bemutatkozas-fo">
+        Visitor Counter:
+        <span id="counter">0</span>
+        <p>Loading content from the API: <b id="name">...</b></p>
+
+        <script>
+          (async function () {
+            const { text } = await (await fetch(`/api/message`)).json();
+            document.querySelector("#name").textContent = text;
+          })();
+        </script>
+      </div>
+      <div id="fo-szoveg">
+        <h2 id="bemutatkozas" class="nagybetu szin">-Introduction</h2>
+        <h1 class="bemutatkozas-fo">Peter Kore</h1>
+
+        <div class="szoveg-border">
+          <h3>Cloud Engineer</h3>
+          <p>
+            I am an enthusiastic Cloud Engineer and Computer Science Engineer
+            with a strong background in telecommunications.
+          </p>
+          <p>
+            I am passionate about leveraging my skills and knowledge to
+            contribute to the ever-evolving field of cloud computing.
+          </p>
+          <p>
+            With a solid foundation in computer science and hands-on experience
+            in the telecommunications industry, I am eager to apply my expertise
+            to solve complex problems and drive innovation in the cloud
+            computing space.
+          </p>
+          <p>
+            I am committed to continuous learning and growth, and I am excited
+            about the opportunities that lie ahead in my career as a Cloud
+            Engineer.
+          </p>
+          <p class="alairas">2026</p>
+        </div>
+      </div>
+    </div>
+    <div id="fo-szoveg-kontener">
+      <div id="bio">
+        <h3 class="alahuzas">Professional Experience</h3>
+        <div class="bio-container">
+          <div class="pipa-ikon">
+            <i class="fas fa-check-circle"></i>
+            <div class="bio-hatar"></div>
+          </div>
+
+          <div class="pipa-tartalom">
+            <h3>Telecommunication representative</h3>
+            <p class="alairas">Magyar Telekom Nyrt. 2012 - 2016</p>
+          </div>
+        </div>
+        <div class="bio-container">
+          <div class="pipa-ikon">
+            <i class="fas fa-check-circle"></i>
+            <div class="bio-hatar"></div>
+          </div>
+
+          <div class="pipa-tartalom">
+            <h3>Senior Telecommunication representative</h3>
+            <p class="alairas">Magyar Telekom Nyrt. 2017- 2020</p>
+          </div>
+        </div>
+        <div class="bio-container">
+          <div class="pipa-ikon">
+            <i class="fas fa-check-circle"></i>
+            <div class="bio-hatar"></div>
+          </div>
+
+          <div class="pipa-tartalom">
+            <h3>B2B, B2C Senior Technical Telecommunication representative</h3>
+            <p class="alairas">Magyar Telekom Nyrt. 2021 -</p>
+          </div>
+        </div>
+
+        <div class="bio-container"></div>
+      </div>
+
+      <div id="kepzettseg">
+        <h2 class="nagybetu szin">Studies and Skills</h2>
+        <h3 class="alahuzas">Studies</h3>
+        <div class="bio-container">
+          <div class="pipa-ikon">
+            <i class="fas fa-check"></i>
+          </div>
+
+          <div class="pipa-tartalom">
+            <h3>Computer Science Engineering BSC</h3>
+            <p class="alairas">GDE 2022-2026</p>
+          </div>
+        </div>
+        <h3 class="alahuzas">Skills</h3>
+        <div class="bio-container">
+          <div class="pipa-ikon">
+            <i class="fas fa-check"></i>
+          </div>
+
+          <div class="pipa-tartalom">
+            <h3>Microsoft Azure Advanced</h3>
+            <p class="alairas">GMK 28-03-2026</p>
+          </div>
+        </div>
+        <div class="bio-container">
+          <div class="pipa-ikon">
+            <i class="fas fa-check"></i>
+          </div>
+
+          <div class="pipa-tartalom">
+            <h3>Microsoft Azure, AWS and Google Cloud Platform Fundamentals</h3>
+            <p class="alairas">Telekom and GMK 2026</p>
+          </div>
+        </div>
+        <div class="bio-container">
+          <div class="pipa-ikon">
+            <i class="fas fa-check"></i>
+          </div>
+
+          <div class="pipa-tartalom">
+            <h3>Version Control, GIT</h3>
+            <p class="alairas">GMK 2025</p>
+          </div>
+        </div>
+
+        <div class="bio-container">
+          <div class="pipa-ikon">
+            <i class="fas fa-check"></i>
+          </div>
+
+          <div class="pipa-tartalom">
+            <h3>Magenta MOOC Go Digital Certificate</h3>
+            <p class="alairas">
+              Europäische Wirtschaftshochschule Berlin / Deutsche Telekom 2016
+            </p>
+          </div>
+        </div>
+        <div class="bio-container">
+          <div class="pipa-ikon">
+            <i class="fas fa-check"></i>
+          </div>
+
+          <div class="pipa-tartalom">
+            <h3>English B2 Examination</h3>
+            <p class="alairas">Euro and Katedra Language School 2014-2016</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="elerhetoseg" class="bemutatkozas-2">
+      <h2>
+        <i class="fas fa-envelope-square szin"> Contact</i>
+      </h2>
+
+      <p>
+        Send a message via LinkedIn:
+        <a href="https://www.linkedin.com/in/peter-kore/" target="_blank"
+          >Peter Kore LinkedIn</a
+        >
+      </p>
+    </div>
+    <div id="lablec">Created: Kóré Péter 2020</div>
+
+    <!--nav menu js -->
     <script>
-    (async function() {
-        const { text } = await( await fetch(`/api/message`)).json();
-        document.querySelector('#name').textContent = text;
-    }());
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
     </script>
-  </main>
-</body>
+    <!--nav menu js vége -->
+    <!--schema markup kezdete-->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "person",
+        "name": "Peter Kore",
 
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "No Street 1",
+          "addressLocality": "Budapest",
+          "postalCode": "1011",
+          "addressCountry": "HU"
+        },
+
+        "sameAs": [
+          "https://www.facebook.com/peter.kore.3",
+          "https://www.linkedin.com/in/peter-kore/"
+        ]
+      }
+    </script>
+    <!--schema markup vege-->
+    <!-- Add your site or application content here -->
+  </body>
 </html>

@@ -17,7 +17,7 @@
 
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <script src="main.js"></script>
     <style>
       body,
       h1,
@@ -53,16 +53,19 @@
   <body>
     <div id="befoglalo">
       <div class="bemutatkozas-fo">
-        Visitor Counter:
-        <span id="counter">0</span>
-        <p>Loading content from the API: <b id="name">...</b></p>
-
-        <script>
+        <div class="latogato-szamlalo">
+          Visitor Counter:
+          <span id="counter">0</span>
+          <p>Loading content from the API: <b id="name">...</b></p>
+        </div>
+        <!--script>
           (async function () {
             const { text } = await (await fetch(`/api/message`)).json();
             document.querySelector("#name").textContent = text;
           })();
-        </script>
+          GetResumeCounter - [httpTrigger]
+        Invoke url:
+        </script-->
       </div>
       <div id="fo-szoveg">
         <h2 id="bemutatkozas" class="nagybetu szin">-Introduction</h2>

@@ -1,4 +1,5 @@
-const functionApiUrl = "https://resume-counter-api.azurewebsites.net/api/getresumecounter";
+const functionApiUrl =
+  "https://resume-counter-api.azurewebsites.net/api/GetResumeCounter";
 
 const getVisitorCounter = async () => {
   let countElement = document.getElementById("counter");
